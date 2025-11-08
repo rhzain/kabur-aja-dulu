@@ -12,8 +12,8 @@ VIDEO_URLS = [
     "https://youtu.be/QE-L40X-DYg?si=NTfyJjQGEes99Oc5",
     "https://youtu.be/ngj-6pkSsaQ?si=oCP7uWl0jsEGvd91",
 ]
-TARGET_PERSENTASE = 60  # Ambil 60% dari total komentar setiap video
-MAX_KOMENTAR_PER_VIDEO = 500  # Batas maksimal komentar per video
+TARGET_PERSENTASE = 80  # Ambil 60% dari total komentar setiap video
+MAX_KOMENTAR_PER_VIDEO = 1000  # Batas maksimal komentar per video
 NAMA_FILE_OUTPUT = "raw-scrape-yt.csv"
 
 # Simpan output di folder script (misalnya folder kabur-aja-dulu tempat scrape.py ada)
