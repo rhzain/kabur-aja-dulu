@@ -149,7 +149,7 @@ def scrape_comments():
             print(f"✅ Selesai untuk video ini! Berhasil: {total_komentar_video_didapat:,} komentar ({persentase_akhir_video:.1f}%)")
 
     print(f"\n{'='*60}")
-    print(f"🎉 SCRAPING SELESAI!")
+    print("🎉 SCRAPING SELESAI!")
     print(f"{'='*60}")
     print(f"📹 Total video diproses: {len(VIDEO_URLS)}")
     print(f"💬 Total komentar terkumpul: {total_komentar_keseluruhan:,}")
