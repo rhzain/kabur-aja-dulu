@@ -5,18 +5,15 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from urllib.parse import urlparse, parse_qs
 
-# --- 1. PENGATURAN (GANTI INI) ---
-
 VIDEO_URLS = [
     "https://youtu.be/MIo4tGN11j0?si=_u13wYQ-sdvNoJnX",
     "https://youtu.be/QE-L40X-DYg?si=NTfyJjQGEes99Oc5",
     "https://youtu.be/ngj-6pkSsaQ?si=oCP7uWl0jsEGvd91",
 ]
-TARGET_PERSENTASE = 80  # Ambil 60% dari total komentar setiap video
+TARGET_PERSENTASE = 80  # Ambil '%' dari total komentar setiap video
 MAX_KOMENTAR_PER_VIDEO = 1000  # Batas maksimal komentar per video
 NAMA_FILE_OUTPUT = "raw-scrape-yt.csv"
 
-# Simpan output di folder script (misalnya folder kabur-aja-dulu tempat scrape.py ada)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_PATH = os.path.join(SCRIPT_DIR, NAMA_FILE_OUTPUT)
 
